@@ -4,8 +4,9 @@ export default {
 </script>
 
 <template>
+  
   <header>
-    <div class="my-container">
+    <div class="container">
       <div class="img-wrapper">
         <img src="../assets/img/dc-logo.png" alt="">
       </div>
@@ -63,6 +64,7 @@ export default {
       </ul>
     </div>
   </header>
+
 </template>
 
 <style lang="scss" scoped>
@@ -70,7 +72,7 @@ export default {
   header{
     background-color:#fff ;
   }
-  .my-container{
+  .container{
     height: 100px;
     display: flex;
     justify-content: space-between;
@@ -87,7 +89,7 @@ export default {
     transition: color 200ms ease-in-out;
     li{
       height: 100%;
-      margin-inline:10px ;
+      margin-inline:.3125rem ;
       display: flex;
       align-items: center;
       position: relative;
@@ -96,9 +98,9 @@ export default {
 
     li a{
       color:#000;
-      padding: .3125rem .3125rem;
+      padding: .3125rem;
       text-transform: uppercase;
-      font-size: .875rem;
+      font-size: .75rem;
       font-weight: bold;
     }
 
