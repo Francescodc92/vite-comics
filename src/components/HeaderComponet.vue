@@ -12,47 +12,53 @@ export default {
       <ul>
         <li class="active">
           <a href="">
-            link
+           characters
           </a>
         </li>
         <li>
           <a href="">
-            link
+            comics
           </a>
         </li>
         <li>
           <a href="">
-            link
+            movies
           </a>
         </li>
         <li>
           <a href="">
-            link
+            tv
           </a>
         </li>
         <li>
           <a href="">
-            link
+            games
           </a>
         </li>
         <li>
           <a href="">
-            link
+            collecticles
           </a>
         </li>
         <li>
           <a href="">
-            link
+            videos
           </a>
         </li>
         <li>
-          <a href="">link</a>
+          <a href="">
+            fans
+          </a>
         </li>
         <li>
-          <a href="">link</a>
+          <a href="">
+            news
+          </a>
         </li>
         <li>
-          <a href="">link</a>
+          <a href="">
+            shop
+          </a>
         </li>
       </ul>
     </div>
@@ -85,12 +91,22 @@ export default {
       display: flex;
       align-items: center;
       position: relative;
+      text-align: center;
     }
-    li a::after{
+
+    li a{
+      color:#000;
+      padding: .3125rem .3125rem;
+      text-transform: uppercase;
+      font-size: .875rem;
+      font-weight: bold;
+    }
+
+    li::after{
       content: "";
       width: 100%;
       display: block;
-      height: 2px;
+      height: 4px;
       background: #0282F9;
       position: absolute;
       bottom:0;
@@ -98,21 +114,15 @@ export default {
       opacity: 0;
       transition: opacity 200ms ease-in-out;
     }
-    li:hover a{
-      color:#0282F9;
+    li:hover, li.active a{
+      color:#0282F9; 
     }
 
-    li:hover a::after{
+    li:hover::after, li.active::after{
       visibility: visible;
       opacity: 1;
     }
-    li.active a::after{
-      visibility: visible;
-      opacity: 1;
-    }
-    a{
-      padding: .3125rem 0;
-    }
+   
   }
   
 </style>
