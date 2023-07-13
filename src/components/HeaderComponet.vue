@@ -1,5 +1,61 @@
 <script>
 export default {
+  data(){
+   return{
+     linksMenu: [
+        {
+          linkHref:'#',
+          linkText: 'characters',
+          isActive:true,
+        },
+        {
+          linkHref:'#',
+          linkText: 'comics',
+          isActive:false,
+        },
+        {
+          linkHref:'#',
+          linkText: 'movies',
+          isActive:false,
+        },
+        {
+          linkHref:'#',
+          linkText: 'tv',
+          isActive:false,
+        },
+        {
+          linkHref:'#',
+          linkText: 'games',
+          isActive:false,
+        },
+        {
+          linkHref:'#',
+          linkText: 'collecticles',
+          isActive:false,
+        },
+        {
+          linkHref:'#',
+          linkText: 'videos',
+          isActive:false,
+        },
+        {
+          linkHref:'#',
+          linkText: 'fans',
+          isActive:false,
+        },
+        {
+          linkHref:'#',
+          linkText: 'news',
+          isActive:false,
+        },
+        {
+          linkHref:'#',
+          linkText: ' shop',
+          isActive:false,
+        },
+    ]
+   } 
+  }
 }
 </script>
 
@@ -13,56 +69,12 @@ export default {
         </a>
       </div>
       <ul>
-        <li class="active">
-          <a href="">
-           characters
+        <li :class="link.isActive ? 'active' : ''" v-for="(link, index) in linksMenu" :key="index">
+          <a :href="link.linkHref">
+           {{ link.linkText }}
           </a>
         </li>
-        <li>
-          <a href="">
-            comics
-          </a>
-        </li>
-        <li>
-          <a href="">
-            movies
-          </a>
-        </li>
-        <li>
-          <a href="">
-            tv
-          </a>
-        </li>
-        <li>
-          <a href="">
-            games
-          </a>
-        </li>
-        <li>
-          <a href="">
-            collecticles
-          </a>
-        </li>
-        <li>
-          <a href="">
-            videos
-          </a>
-        </li>
-        <li>
-          <a href="">
-            fans
-          </a>
-        </li>
-        <li>
-          <a href="">
-            news
-          </a>
-        </li>
-        <li>
-          <a href="">
-            shop
-          </a>
-        </li>
+        <!--end link-->
       </ul>
     </div>
   </header>

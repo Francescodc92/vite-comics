@@ -203,7 +203,7 @@
           </li>
           <li>
             <a class="link" href="">
-              <img src="../assets/img/favicon.ico" alt="">
+              <img src="../assets/img/footer-periscope.png" alt="">
             </a>
           </li>
         </ul>
@@ -275,6 +275,11 @@
         color:#fff;
         padding: 10px 15px;
         text-transform: uppercase;
+        transition: background-color 200ms ease-in-out;
+        cursor: pointer;
+        &:hover{
+          background-color: #0282F9;
+        }
       }
     }
     .section-right{
@@ -291,6 +296,12 @@
           width: 40px;
           height: 40px;
           display: block;
+          border: 2px solid transparent;
+          border-radius:50%;
+          transition: border-color 200ms ease-in-out;
+          &:hover{
+            border-color:#fff;
+          }
         }
       }
     }
