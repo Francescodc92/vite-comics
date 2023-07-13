@@ -8,7 +8,9 @@ export default {
   <header>
     <div class="container">
       <div class="img-wrapper">
-        <img src="../assets/img/dc-logo.png" alt="">
+        <a href="">
+          <img src="../assets/img/dc-logo.png" alt="">
+        </a>
       </div>
       <ul>
         <li class="active">

@@ -1,14 +1,16 @@
 <script>
 import HeaderComponet from './components/HeaderComponet.vue';
 import MainComponet from './components/MainComponet.vue';
+import FooterComponet from './components/FooterComponent.vue'
 export default {
-  components: { HeaderComponet , MainComponet},
+  components: { HeaderComponet , MainComponet, FooterComponet},
 }
 </script>
 
 <template>
   <headerComponet/>
   <MainComponet/>
+  <FooterComponet/>
 </template>
 
 <style lang="scss">

@@ -67,9 +67,6 @@
     padding: 50px 0;
     color:#fff;
   }
-  .main-top{
-    background-color:#000;
-  }
   .main-bottom{
     background-color:#0282F9;
     padding: 0 30px;
@@ -80,6 +77,9 @@
     justify-content: space-between;
     align-items: center;
     li{
+      border: 1px solid transparent;
+      transition: color 200ms ease-in-out;
+      border-radius: 20px;
       a{
         display: flex;
         align-items: center;
@@ -87,7 +87,12 @@
         text-transform: uppercase;
         font-size: .875rem;
         color: #fff;
+        padding: 20px 30px;
       }
+      &:hover {
+        border-color: #fff;
+      }
+
     }
   }
   .img-wrapper{
