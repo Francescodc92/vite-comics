@@ -1,4 +1,44 @@
-<script></script>
+<script>
+export default{
+  data(){
+    return {
+      dcComixLinks: [
+        'Characters',
+        'Comics',
+        'Movies',
+        'Tv',
+        'Games',
+        'Videos',
+        'News',
+      ],
+      shop: [
+        'Shop Dc',
+        'Shop Dc Collectibles'
+      ], 
+      DC: [
+        'Terms of use',
+        'privacy policy(New)',
+        'ad choices',
+        'advertising',
+        'jobs',
+        'subscriptions',
+        'talent workshops',
+        'CPSC Certigicates',
+        'Ratings',
+        'Shop Help',
+        'contact us',
+      ],
+      DcComics:[
+        'DC',
+        'MAD Magazine',
+        'DC kids',
+        'DC Universe',
+        'DC  Power Visa',
+      ]
+    }
+  }
+}
+</script>
 
 <template>
  <footer>
@@ -7,45 +47,9 @@
       <div class="footer-section">
         <h3 class="title">DC comics</h3>
         <ul>
-          <li class="list-item">
+          <li class="list-item" v-for="(link, index) in dcComixLinks" :key="index">
             <a href="">
-              Characters
-            </a>
-          </li>
-          <!--end list item-->
-          <li class="list-item">
-            <a href="">
-              Ccomics
-            </a>
-          </li>
-          <!--end list item-->
-          <li class="list-item">
-            <a href="">
-              Movies
-            </a>
-          </li>
-          <!--end list item-->
-          <li class="list-item">
-            <a href="">
-             tv
-            </a>
-          </li>
-          <!--end list item-->
-          <li class="list-item">
-            <a href="">
-              Games
-            </a>
-          </li>
-          <!--end list item-->
-          <li class="list-item">
-            <a href="">
-              videos
-            </a>
-          </li>
-          <!--end list item-->
-          <li class="list-item">
-            <a href="">
-              news
+              {{ link }}
             </a>
           </li>
           <!--end list item-->
@@ -56,12 +60,8 @@
           Shop
         </h3>
         <ul>
-          <li class="list-item">
-            <a href="">shop dc</a>
-          </li>
-          <!--end list item-->
-          <li class="list-item">
-            <a href="">shop dc Collectibles</a>
+          <li class="list-item" v-for="(link, index) in shop" :key="index">
+            <a href="">{{ link }}</a>
           </li>
           <!--end list item-->
         </ul>
@@ -71,96 +71,21 @@
       <div class="footer-section">
         <h3 class="title">DC</h3>
         <ul>
-          <li class="list-item">
+          <li class="list-item" v-for="(link, index) in DC" :key="index">
             <a href="">
-              Terms of use
+              {{ link }}
             </a>
           </li>
-          <li class="list-item">
-            <a href="">
-              privacy policy(New)
-            </a>
-          </li>
-          <li class="list-item">
-            <a href="">
-             ad choices
-            </a>
-          </li>
-          <li class="list-item">
-            <a href="">
-             advertising
-            </a>
-          </li>
-          <li class="list-item">
-            <a href="">
-             jobs
-            </a>
-          </li>
-          <li class="list-item">
-            <a href="">
-             subscriptions
-            </a>
-          </li>
-          <li class="list-item">
-            <a href="">
-             talent workshops
-            </a>
-          </li>
-          <li class="list-item">
-            <a href="">
-             CPSC Certigicates
-            </a>
-          </li>
-          <li class="list-item">
-            <a href="">
-             Ratings
-            </a>
-          </li>
-          <li class="list-item">
-            <a href="">
-             Shop Help
-            </a>
-          </li>
-          <li class="list-item">
-            <a href="">
-             contact us
-            </a>
-          </li>
-  
         </ul>
         <!--end link list -->
       </div>
       <!--end section footer top-->
       <div class="footer-section">
         <h3 class="title">DC comics</h3>
-           <ul>
-          <li class="list-item">
+        <ul>
+          <li class="list-item" v-for="(link, index) in DcComics" :key="index">
             <a href="">
-              Dc
-            </a>
-          </li>
-          <!--end list item-->
-          <li class="list-item">
-            <a href="">
-              MAD Magazine
-            </a>
-          </li>
-          <!--end list item-->
-          <li class="list-item">
-            <a href="">
-              DC Kids
-            </a>
-          </li>
-          <!--end list item-->
-          <li class="list-item">
-            <a href="">
-             DC Universe
-            </a>
-          </li>
-          <!--end list item-->
-          <li class="list-item">
-            <a href="">
-              DC Power Visa
+              {{ link }}
             </a>
           </li>
           <!--end list item-->
