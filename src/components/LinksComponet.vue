@@ -53,7 +53,6 @@ export default{
 </template>
 
 <style lang="scss" scoped>
-  @use "../assets/scss/main.scss";
   .container{
     padding: 50px 0;
     color:#fff;

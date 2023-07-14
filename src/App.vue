@@ -14,5 +14,5 @@ export default {
 </template>
 
 <style lang="scss">
- @use "assets/scss/main.scss";
+ @use "assets/scss/main.scss" as *;// da usare sempre per non scordarlo  in caso di utilizzo di variabili 
 </style>

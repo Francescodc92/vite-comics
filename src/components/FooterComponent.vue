@@ -141,7 +141,6 @@ export default{
 </template>
 
 <style lang="scss" scoped>
-  @use "../assets/scss/main.scss";
   .footer-top{
     background-image: url(../assets/img/footer-bg.jpg);
     background-repeat: no-repeat;
