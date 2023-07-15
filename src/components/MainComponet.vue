@@ -149,7 +149,9 @@ export default{
   }
   .cards-container{
     display: flex;
+    align-items: stretch;
     flex-wrap: wrap;
+    gap: 1.25rem;
   }
 
 </style>

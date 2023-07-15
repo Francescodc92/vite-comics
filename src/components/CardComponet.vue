@@ -21,10 +21,9 @@ export default{
 
 <style lang="scss" scoped>
   .card{
-    width: calc((100% - 4%) / 6 );
-    height: 100%;
+    width: calc((100% - (20px * 5)) / 6 );
     padding-inline:.625rem;
-    padding-top: .625rem ;
+    padding-block: .625rem ;
     margin-bottom: 30px;
     border: 1px solid transparent;
     border-radius: 15px;
@@ -41,16 +40,15 @@ export default{
       width: 100%;
       height: 250px;
       img{
-        min-width: 100%;
-        min-height: 100%;
+        width: 100%;
+        height: 100%;
         object-fit:contain;
       }
     }
     h3{
-      font-size: .9375rem;
+      font-size: .75rem;
       font-weight: normal;
       text-transform: uppercase;
-      padding: 10px 0;
     }
   }
 </style>

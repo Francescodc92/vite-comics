@@ -64,6 +64,7 @@ export default{
       display: flex;
       justify-content: space-between;
       align-items: center;
+      gap: 1.25rem;
       li{
         border: 1px solid transparent;
         transition: border-color 200ms ease-in-out;
@@ -75,7 +76,7 @@ export default{
           text-transform: uppercase;
           font-size: .875rem;
           color: #fff;
-          padding: 20px 30px;
+          padding: 20px 10px;
         }
         &:hover {
           border-color: #fff;
