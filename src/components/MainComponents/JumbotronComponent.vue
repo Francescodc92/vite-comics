@@ -1,3 +1,9 @@
+<script>
+  export default{
+
+  }
+</script>
+
 <template>
     <div class="jumbotron-container">
     </div>

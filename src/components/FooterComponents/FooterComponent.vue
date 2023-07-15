@@ -151,19 +151,12 @@ export default{
       display: flex;
       padding: 30px;
       gap: 30px;
+      background-image: url(../../assets/img/dc-logo-bg.png);
+      background-position: right;
+      background-size: 45%;
+      background-repeat: no-repeat;
     }
-    .container::after{
-      content: '';
-      display: block;
-      width: 40%;
-      height: 100%;
-      background-image: url(../assets/img/dc-logo-bg.png);
-      background-position: center;
-      background-size: cover;
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
+  
   }
 
   .title{

@@ -83,9 +83,31 @@ export default{
               "series": "Catwoman",
               "type": "graphic novel",
           },
-        ]
+      ],
+      cardsContent: [
+        {
+          img:'../../assets/img/buy-comics-digital-comics.png',
+          text: 'digital comics'
+        },
+        {
+          img:'../../assets/img/buy-comics-merchandise.png',
+          text: 'dc merchandise'
+        },
+        {
+          img:'../../assets/img/buy-comics-subscriptions.png',
+          text: 'subscription'
+        },
+        {
+          img:'../../assets/img/buy-comics-shop-locator.png',
+          text: 'comic shop locator'
+        },
+        {
+          img:'../../assets/img/buy-dc-power-visa.svg',
+          text: 'dc power visa'
+        }
+      ]
     }
-  }
+  },
  
 }
 </script>
@@ -112,7 +134,18 @@ export default{
       </div>
       </div>
     </div>
-    <LinksComponent/>
+    <div class="main-bottom">
+      <div class="container">
+        <ul>
+          <LinksComponent 
+            v-for="(card, index) in cardsContent"
+            :key="index"
+            :linkSrc="card.img"
+            :linkText="card.text"
+          />
+        </ul>
+      </div>
+    </div>
   </main>
 </template>
 
@@ -120,6 +153,20 @@ export default{
 
   main{
     background-color: #1C1C1C;
+    .main-bottom{
+    background-color:#0282F9;
+    padding: 0 30px;
+    .container{
+      padding: 50px 0;
+      color:#fff;
+    }
+    ul{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1.25rem;
+    }
+  }
   }
   .container{
     color:#fff;

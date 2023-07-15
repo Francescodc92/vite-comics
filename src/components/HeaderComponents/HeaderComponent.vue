@@ -1,5 +1,9 @@
 <script>
+import HeaderLinksComponent from './HeaderLinksComponent.vue';
 export default {
+  components:{
+    HeaderLinksComponent
+  },
   data(){
    return{
      linksMenu: [
@@ -69,11 +73,13 @@ export default {
         </a>
       </div>
       <ul>
-        <li :class="link.isActive ? 'active' : ''" v-for="(link, index) in linksMenu" :key="index">
-          <a :href="link.linkHref">
-           {{ link.linkText }}
-          </a>
-        </li>
+       <HeaderLinksComponent 
+       :class="link.isActive ? 'active' : ''"
+        v-for="(link, index) in linksMenu" 
+        :key="index"
+        :href="link.linkHref"
+        :text="link.linkText"
+        />
         <!--end link-->
       </ul>
     </div>
@@ -100,42 +106,7 @@ export default {
     height: 100%;
     display: flex;
     transition: color 200ms ease-in-out;
-      li{
-        height: 100%;
-        margin-inline:.3125rem ;
-        display: flex;
-        align-items: center;
-        position: relative;
-        text-align: center;
-        & a{
-          color:#000;
-          padding: 1.25rem .3125rem;
-          text-transform: uppercase;
-          font-size: .75rem;
-          font-weight: bold;
-          transition: color 200ms ease-in-out;
-        }
-
-        &::after{
-          content: "";
-          width: 100%;
-          display: block;
-          height: 4px;
-          background: #0282F9;
-          position: absolute;
-          bottom:0;
-          visibility: hidden;
-          opacity: 0;
-          transition: opacity 200ms ease-in-out;
-        }
-        &:hover a, &.active a{
-        color:#0282F9; 
-        }
-        &:hover::after, &.active::after{
-          visibility: visible;
-          opacity: 1;
-        }
-    }
+      
   }
   
 </style>
