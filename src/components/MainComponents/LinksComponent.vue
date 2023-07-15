@@ -4,23 +4,23 @@ export default{
     return {
       cardsContent: [
         {
-          img:'../assets/img/buy-comics-digital-comics.png',
+          img:'../../assets/img/buy-comics-digital-comics.png',
           text: 'digital comics'
         },
         {
-          img:'../assets/img/buy-comics-merchandise.png',
+          img:'../../assets/img/buy-comics-merchandise.png',
           text: 'dc merchandise'
         },
         {
-          img:'../assets/img/buy-comics-subscriptions.png',
+          img:'../../assets/img/buy-comics-subscriptions.png',
           text: 'subscription'
         },
         {
-          img:'../assets/img/buy-comics-shop-locator.png',
+          img:'../../assets/img/buy-comics-shop-locator.png',
           text: 'comic shop locator'
         },
         {
-          img:'../assets/img/buy-dc-power-visa.svg',
+          img:'../../assets/img/buy-dc-power-visa.svg',
           text: 'dc power visa'
         }
       ]

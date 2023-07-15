@@ -65,7 +65,7 @@ export default {
     <div class="container">
       <div class="img-wrapper">
         <a href="">
-          <img src="../assets/img/dc-logo.png" alt="">
+          <img src="../../assets/img/dc-logo.png" alt="">
         </a>
       </div>
       <ul>

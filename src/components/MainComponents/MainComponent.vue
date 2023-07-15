@@ -1,12 +1,12 @@
 <script>
-import LinksComponent from "./LinksComponet.vue";
-import JumbotronComponet from "./JumbotronComponet.vue";
-import CardComponet from "./CardComponet.vue";
+import LinksComponent from "./LinksComponent.vue";
+import JumbotronComponent from "./JumbotronComponent.vue";
+import CardComponent from "./CardComponent.vue";
 export default{
   components:{
     LinksComponent,
-    JumbotronComponet,
-    CardComponet
+    JumbotronComponent,
+    CardComponent
   },
   data(){
     return {
@@ -93,12 +93,12 @@ export default{
 <template>
   <main>
     <div class="main-top">
-      <JumbotronComponet/>
+      <JumbotronComponent/>
       <!--end jumbotron-->
       <div class="container">
       <h2>Current series</h2>
       <div class="cards-container">
-      <CardComponet 
+      <CardComponent 
         v-for="(currentSerie, index) in series"
         :key="index"
         :srcImg="currentSerie.thumb"

@@ -108,27 +108,27 @@ export default{
         <ul class="social-links">
           <li>
             <a class="link" href="">
-              <img src="../assets/img/footer-facebook.png" alt="">
+              <img src="../../assets/img/footer-facebook.png" alt="">
             </a>
           </li>
           <li>
             <a class="link" href="">
-              <img src="../assets/img/footer-twitter.png" alt="">
+              <img src="../../assets/img/footer-twitter.png" alt="">
             </a>
           </li>
           <li>
             <a class="link" href="">
-              <img src="../assets/img/footer-youtube.png" alt="">
+              <img src="../../assets/img/footer-youtube.png" alt="">
             </a>
           </li>
           <li>
             <a class="link" href="">
-              <img src="../assets/img/footer-pinterest.png" alt="">
+              <img src="../../assets/img/footer-pinterest.png" alt="">
             </a>
           </li>
           <li>
             <a class="link" href="">
-              <img src="../assets/img/footer-periscope.png" alt="">
+              <img src="../../assets/img/footer-periscope.png" alt="">
             </a>
           </li>
         </ul>
@@ -142,7 +142,7 @@ export default{
 
 <style lang="scss" scoped>
   .footer-top{
-    background-image: url(../assets/img/footer-bg.jpg);
+    background-image: url(../../assets/img/footer-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     .container{
