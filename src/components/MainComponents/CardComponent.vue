@@ -20,6 +20,8 @@ export default{
 </template>
 
 <style lang="scss" scoped>
+@use "../../assets/scss/main.scss" as *;
+@use "../../assets/scss/partials/variables.scss" as *;
   .card{
     width: calc((100% - (20px * 5)) / 6 );
     padding-inline:.625rem;
@@ -30,11 +32,11 @@ export default{
     transition: border-color 200ms ease-in-out;
     
     a{
-      color: #fff;
+      color: $primary-text-color;
     }
     
     &:hover{
-      border-color: #fff;
+      border-color: $primary-text-color;
     }
     .img-wrapper{
       width: 100%;

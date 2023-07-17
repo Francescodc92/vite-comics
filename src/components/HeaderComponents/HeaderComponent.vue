@@ -88,8 +88,10 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use "../../assets/scss/main.scss" as *;
+@use "../../assets/scss/partials/variables.scss" as *;
   header{
-    background-color:#fff ;
+    background-color: $primary-text-color ;
   }
   .container{
     height: 100px;

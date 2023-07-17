@@ -27,6 +27,8 @@
 </template>
 
 <style lang="scss" scoped>
+@use "../../assets/scss/main.scss" as *;
+@use "../../assets/scss/partials/variables.scss" as *;
   li{
     width: calc((100% - (1.25rem * 4)) / 5 );
     border: 1px solid transparent;
@@ -39,10 +41,10 @@
       text-transform: uppercase;
       font-size: .875rem;
       padding: 20px 5px;
-      color: #fff;
+      color: $primary-text-color;
     }
     &:hover {
-      border-color: #fff;
+      border-color: $primary-text-color;
     }
 
   }

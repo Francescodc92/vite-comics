@@ -141,6 +141,8 @@ export default{
 </template>
 
 <style lang="scss" scoped>
+@use "../../assets/scss/main.scss" as *;
+@use "../../assets/scss/partials/variables.scss" as *;
   .footer-top{
     background-image: url(../../assets/img/footer-bg.jpg);
     background-repeat: no-repeat;
@@ -161,7 +163,7 @@ export default{
 
   .title{
     text-transform: uppercase;
-    color: #fff;
+    color: $primary-text-color ;
     margin-top: 10px;
   }
 
@@ -169,7 +171,7 @@ export default{
     margin: 5px 0;
      a{
       font-size: 13px;
-      color:#8f8d8d;
+      color: $links-footer-color ;
       padding: 10px 0;
     }
     &:hover a{
@@ -177,9 +179,9 @@ export default{
     }
   }
   .footer-bottom{
-    background-color: #303030;
+    background-color: $footer-bg-color ;
     .container{
-      padding: 30px 0;
+      padding-block: 30px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -188,14 +190,14 @@ export default{
       button{
         font-size: 1.125rem;
         background: transparent;
-        border: 2px solid #0282F9;
-        color:#fff;
+        border: 2px solid $primary-color ;
+        color: $primary-text-color;
         padding: 10px 15px;
         text-transform: uppercase;
         transition: background-color 200ms ease-in-out;
         cursor: pointer;
         &:hover{
-          background-color: #0282F9;
+          background-color: $primary-color ;
         }
       }
     }
@@ -204,7 +206,7 @@ export default{
       align-items: center;
       gap: .9375rem;
       .title{
-        color: #0282F9;
+        color: $primary-color ;
       }
       .social-links {
         display: flex;
@@ -217,7 +219,7 @@ export default{
           border-radius:50%;
           transition: border-color 200ms ease-in-out;
           &:hover{
-            border-color:#fff;
+            border-color: $primary-text-color ;
           }
         }
       }

@@ -150,15 +150,16 @@ export default{
 </template>
 
 <style lang="scss" scoped>
-
+@use "../../assets/scss/main.scss" as *;
+@use "../../assets/scss/partials/variables.scss" as *;
   main{
-    background-color: #1C1C1C;
+    background-color: $main-bg-color;
     .main-bottom{
-    background-color:#0282F9;
+    background-color: $primary-color;
     padding: 0 30px;
     .container{
       padding: 50px 0;
-      color:#fff;
+      color: $primary-text-color;
     }
     ul{
       display: flex;
@@ -169,27 +170,27 @@ export default{
   }
   }
   .container{
-    color:#fff;
+    color: $primary-text-color;
     h2{
       display: inline-block;
       padding: .3125rem .9375rem;
       transform: translateY(-50%);
-      background-color: #0282F9;
+      background-color: $primary-color;
     }
     .button-wrapper{
       text-align: center;
       button{
         padding: .625rem .9375rem;
-        background-color: #0282F9;
+        background-color: $primary-color;
         border: none;
         margin-bottom: 10px;   
         text-transform: uppercase;
         border:1px solid transparent;
-        color:#fff; 
+        color: $primary-text-color; 
         cursor: pointer; 
         transition: border-color 200ms ease-in-out;
         &:hover{
-          border-color:#fff;
+          border-color: $primary-text-color;
         }
       }
     }

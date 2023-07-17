@@ -16,6 +16,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use "../../assets/scss/main.scss" as *;
+@use "../../assets/scss/partials/variables.scss" as *;
   li{
         height: 100%;
         margin-inline:.3125rem ;
@@ -24,7 +26,7 @@ export default {
         position: relative;
         text-align: center;
         & a{
-          color:#000;
+          color: $dark-color;
           padding: 1.25rem .3125rem;
           text-transform: uppercase;
           font-size: .75rem;
@@ -37,7 +39,7 @@ export default {
           width: 100%;
           display: block;
           height: 4px;
-          background: #0282F9;
+          background: $primary-color;
           position: absolute;
           bottom:0;
           visibility: hidden;
@@ -45,7 +47,7 @@ export default {
           transition: opacity 200ms ease-in-out;
         }
         &:hover a, &.active a{
-        color:#0282F9; 
+        color: $primary-color ; 
         }
         &:hover::after, &.active::after{
           visibility: visible;
